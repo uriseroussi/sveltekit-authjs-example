@@ -20,9 +20,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@auth/core": "^0.20.0",
-		"@auth/mongodb-adapter": "^2.0.12",
-		"@auth/sveltekit": "^0.5.2",
+		"@auth/core": "^0.31.0",
+		"@auth/mongodb-adapter": "^3.1.0",
+		"@auth/sveltekit": "^1.1.0",
 		"mongodb": "^6.3.0",
 		"nodemailer": "^6.9.8"
 	}

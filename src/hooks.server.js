@@ -12,11 +12,11 @@ import {
 	EMAIL_FROM
 } from '$env/static/private';
 import clientPromise from '$lib/database/clientPromise';
-import EmailProvider from '@auth/core/providers/email';
+import NodemailerProvider from '@auth/core/providers/nodemailer';
 
-export const handle = SvelteKitAuth({
+export const { handle } = SvelteKitAuth({
 	providers: [
-		EmailProvider({
+		NodemailerProvider({
 			server: {
 				host: SMTP_HOST,
 				port: Number(SMTP_PORT),

@@ -7,7 +7,7 @@
 	let email = '';
 
 	const handleEmailSignIn = () => {
-		signIn('email', { email, callbackUrl: '/protected' });
+		signIn('nodemailer', { email, callbackUrl: '/protected' });
 	};
 
 	const handleGoogleSignIn = () => {
